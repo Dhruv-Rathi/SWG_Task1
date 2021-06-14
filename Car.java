@@ -22,7 +22,7 @@ class Truck extends Car{
     double weight;
     double getSalePrice()
     {
-        int salePrice = 0;
+        double salePrice = 0;
         if(weight>2300)
         {
             salePrice += (90*regularPrice)/100 ;
