@@ -1,13 +1,13 @@
 public class Car {
-    int speed,regularPrice;
+    double speed,regularPrice;
     String color;
-    public Car(int speed,int regularPrice,String color)
+    public Car(double speed,double regularPrice,String color)
     {
         this.speed = speed;
         this.regularPrice = regularPrice;
         this.color = color;
     }
-    int getSalePrice()
+    double getSalePrice()
     {
         return regularPrice;
     }
@@ -16,11 +16,11 @@ public class Car {
 
 class Truck extends Car{
 
-    public Truck(int speed, int regularPrice, String color) {
+    public Truck(double speed, double regularPrice, String color) {
         super(speed, regularPrice, color);
     }
-    int weight;
-    int getSalePrice()
+    double weight;
+    double getSalePrice()
     {
         int salePrice = 0;
         if(weight>2300)
